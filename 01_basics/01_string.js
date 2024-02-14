@@ -4,13 +4,13 @@ console.log(name);
 //properties of string 
 //string:length
 
-console.log(name.length);
+console.log(name.length); // expected output= 5
 
 // ----------Methods of string----------
 
 // string:concat
 
-console.log(name.concat(" ","Bhujel"));
+console.log(name.concat(" ","Bhujel")); // expected output = sital Bhujel
 
 
 // string:endswith
@@ -31,4 +31,22 @@ console.log(str.replaceAll(' ','/')) // expected output = I/am/a/boy
 //string: search
 console.log(str.search('b'))  // expected output = 7 which is index of 'b'
 
-//string: 
+//string: slice
+console.log(str.slice(4))   // expected output = a boy
+console.log(str.slice(4,9))  // expected output = a bo
+
+//string: split
+
+console.log(str.split(' ')); //expected output = ["I","am","a","boy"]
+console.log(str.split(' ', 3)); // expected output = ["I","am","a"]
+
+//string:substring
+
+console.log(str.substring(4)); //expected output =  a boy
+console.log(str.substring(-2,8))// expected output= I am a b          //negative indeces are count as 0 in substring method
+
+//string:trim
+
+let string = "       hello     "
+console.log(string.trim())  //expected output = hello // with out extra whitespaces
+
