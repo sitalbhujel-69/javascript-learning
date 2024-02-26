@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #171717; color: white;">
+    <ul class="clubs">
+        <li>barcelona</li>
+
+    </ul>
+    <script>
+        function addlist (name){
+           let child = document.createElement("li")
+           child.innerText = `${name}`
+           document.body.querySelector(".clubs").appendChild(child)
+        }
+        addlist("real madrid")
+        addlist("atletico madrid")
+        function optimized(name){
+            let child = document.createElement("li")
+            child.appendChild(document.createTextNode(name))
+            document.body.querySelector(".clubs").appendChild(child)
+
+        }
+        optimized("man utd")
+
+        //Edit
+        let first = document.querySelector("li:nth-child(1)");
+        const second = document.createElement("li")
+        second.textContent  = "chelsea"
+        first.replaceWith(second)
+
+        //remove
+        let lang = document.querySelector("li:last-child")
+        lang.remove()
+    </script>
+</body>
+</html>
