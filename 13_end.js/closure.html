@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="Orange">Orange</button>
+    <button id="black">black</button>
+    <script>
+        // document.querySelector("#Orange").addEventListener("click",(e)=>{
+        //     document.body.style.backgroundColor = "orange"
+        // })
+        // document.querySelector("#black").addEventListener("click",(e)=>{
+        //     document.body.style.backgroundColor = "black"
+        // })
+
+        function clickhandler(color){
+            return function(){
+
+                document.body.style.backgroundColor = `${color}`
+            }
+        }
+        document.querySelector("#Orange").addEventListener("click",clickhandler("orange"))
+    </script>
+</body>
+</html>
