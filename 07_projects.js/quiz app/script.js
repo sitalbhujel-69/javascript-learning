@@ -47,4 +47,8 @@ next.addEventListener("click",(e)=>{
         }
         click++
     }
+    else{
+        next.disabled = true
+        msg.innerHTML = "game completed"
+    }
 })
