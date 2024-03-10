@@ -129,3 +129,44 @@ div.msg{
     display: flex;
     flex-wrap: wrap;
 }
+
+@media (max-width:500px){
+    .answer{
+        grid-template-areas: "one"
+                             "two"
+                             "three"
+                             "four";
+        gap: 10px;
+        padding: 5px;
+    }
+    .answer .option{
+        width: 90%;
+        font-size: 17px;
+    }
+    .title{
+        padding: 5px;
+        width: 90%;
+    }
+    .question{
+        padding: 5px;
+        font-size: 20px;
+        height: 20%;
+    }
+    .next{
+        width: 90%;
+    }
+    .scoreboard{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .score{
+        width: 90%;
+        font-size: 20px;
+    }
+    #msg{
+        width: 90%;
+        height: 75%;
+        font-size: 20px;
+        padding: 5px;
+    }
+}
